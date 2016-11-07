@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form  method="post" action="html_form_send.php">
+    <table width="450px">
+        <tr>
+            <td >
+                <label for="first_name">First Name *</label>
+            </td>
+            <td >
+                <input  type="text" name="first_name" maxlength="50" size="30" id="first_name">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+            <label for="last_name">Last Name *</label>
+            </td>
+            <td >
+                <input  type="text" name="last_name" maxlength="50" size="30" id="last_name">
+            </td>
+        </tr>
+        <tr>
+            <td >
+                <label for="email">Email Address *</label>
+            </td>
+            <td >
+                <input  type="email" name="email" id="email">
+            </td>
+
+        </tr>
+        <tr>
+            <td >
+                <label for="telephone">Telephone Number</label>
+            </td>
+            <td >
+                <input type="tel" name="telephone" id="telephone">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="comments">Comments *</label>
+            </td>
+            <td>
+                <textarea  name="comments" maxlength="1000" cols="25" rows="6" id="comments"></textarea>
+            </td>
+
+        </tr>
+        <tr>
+            <td>    <input type="checkbox" name="friut" value="apples" /> Apples</td>
+            <td>    <input type="checkbox" name="friut" value="Oranges" /> Oranges</td>
+        </tr>
+        <tr>
+            <td>    <input type="checkbox" name="friut" value="Pears" /> Pears</td>
+            <td>    <input type="checkbox" name="friut" value="Peaches" /> Peaches</td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button><img src="http://www.clker.com/cliparts/v/j/j/k/U/s/red-submit-button-hi.png" alt="add"
+                             width="100" height="30" /></button>
+
+            </td>
+            <td colspan="2">
+                 <input type="reset" value="Reset Form" name="submit">
+            </td>
+        </tr>
+    </table>
+
+
+
+
+</form>
+
+<hr>
+<form action="http://www.example.org/subscribe.php">
+<p>Subscribe to our email list:</p>
+<input type="text" name="email" /> <br/> <br/>
+
+    <td> Select a file to upload: <input type="file" name="selectedfile"/></td><br/><br/>
+    <th>
+        Select Something:
+        <select name="something">
+            <option value="Google">Google</option>
+            <option value="Bing">Bing</option>
+            <option value="Yahoo">Yahoo</option>
+        </select>
+    </th><br/><br/>
+<input type="image" src="https://openclipart.org/image/2400px/svg_to_png/190688/1391840309.png" width="100" height="20" />
+</form>
+
+
+</body>
+</html>

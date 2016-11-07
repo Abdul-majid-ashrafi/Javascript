@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "public": "chapter 7 form",
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
