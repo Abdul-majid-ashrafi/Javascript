@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>For Loops</title>
+    <script>
+        /** without for loop **/
+
+        // document.write("Hello World<br>");
+        // document.write("Hello World<br>");
+        // document.write("Hello World<br>");
+        // document.write("Hello World<br>");
+        // document.write("Hello World<br>");
+
+        /** without for loop **/
+
+        //    var num = 0;
+
+        //    document.write(num + "<br>");
+        //    num += 1;
+        //    document.write(num + "<br>");
+        //    num += 1;
+        //    document.write(num + "<br>");
+        //    num += 1;
+        //    document.write(num + "<br>");
+        //    num += 1;
+        //    document.write(num + "<br>");
+        //    num += 1;
+        //    document.write(num + "<br>");
+        //    num += 1;
+        //    document.write(num + "<br>");
+        //    num += 1;
+        //    document.write(num + "<br>");
+        //    num += 1;
+        //    document.write(num + "<br>");
+        //    num += 1;
+        //    document.write(num + "<br>");
+        //    num += 1;
+        //    document.write(num + "<br>");
+        //    num += 1;
+
+        // var num = 0;
+
+        //        document.write("2 x " + num + " = " + 2 * num +"<br>");
+        //        num += 1;
+        //        document.write("2 x " + num + " = " + 2 * num + "<br>");
+        //        num += 1;
+        //        document.write("2 x " + num + " = " + 2 * num + "<br>");
+        //        num += 1;
+        //        document.write("2 x " + num + " = " + 2 * num +  "<br>");
+        //        num += 1;
+        //        document.write("2 x " + num + " = " + 2 * num +  "<br>");
+        //        num += 1;
+        //        document.write("2 x " + num + " = " + 2 * num +  "<br>");
+        //        num += 1;
+        //        document.write("2 x " + num + " = " + 2 * num +  "<br>");
+        //        num += 1;
+        //        document.write("2 x " + num + " = " + 2 * num +  "<br>");
+        //        num += 1;
+        //        document.write("2 x " + num + " = " + 2 * num +  "<br>");
+        //        num += 1;
+        //        document.write("2 x " + num + " = " + 2 * num +  "<br>");
+        //        num += 1;
+        //        document.write("2 x " + num + " = " + 2 * num +  "<br>");
+
+
+        /** For Loops **/
+
+        /*
+            for (initializer ; condition ; incrementer/decrementer)
+            {
+
+            }
+         */
+
+
+
+        /** structure **/
+
+        //        for ( ; ; )
+        //        {
+        //
+        //        }
+
+
+
+
+
+
+        /** for loop **/
+
+        // for (var count = 1; count <= 5; count++) {
+        //     document.write("Hello World<br>");
+        // }
+
+
+        /** for loop **/
+
+        // for (var num = 0; num <= 10; num++) {
+        //     document.write(num + "<br>");
+        // }
+
+
+
+        /** for loop table **/
+        // for (var num = 1; num <= 100; num++) {
+        //     document.write("2 x " + num + " = " + 2 * num + "<br>");
+        // }
+
+        // var names = ["Majid", "Ashraf", "Haider", "Ali"]
+        // names[2]
+
+        // var cleanestCities = ["Jelly", "Santa Fe", "Tucson", "Honolulu"];
+        // document.write("<h4>Cleanest Cities List</h4>");
+        // for (var i = 0; i < cleanestCities.length; i++) {
+        //     document.write(cleanestCities[i] + " at index " + i);
+        //     document.write("<br>");
+        // }
+
+
+        /** for loop - optional statements **/
+
+        // var num = 0;
+        // for (; num <= 10; num++) {
+        //     document.write(num + "<br>");
+        // }
+
+
+        /** for loop - optional statements **/
+
+        // for (var num = 0; ; num++) {
+        //     if (num <=  10) {
+        //         document.write(num + "<br>");
+        //     }
+        //     else {
+        //         break;
+        //     }
+        // }
+
+
+        /** for loop - optional statements **/
+
+        // for (var num = 0; num <= 10;) {
+        //     document.write(num + "<br>");
+        //     num++;
+        // }
+
+
+
+
+        /** Example - without for loop **/
+        // var cleanestCities = ["Jelly", "Santa Fe", "Great Falls", "Honolulu"];
+        // var cityToCheck = prompt("Enter city name");
+        // if (cityToCheck === cleanestCities[0]) {
+        //     alert("It's one of the cleanest cities");
+        // }
+        // else if (cityToCheck === cleanestCities[1]) {
+        //     alert("It's one of the cleanest cities");
+        // }
+        // else if (cityToCheck === cleanestCities[2]) {
+        //     alert("It's one of the cleanest cities");
+        // }
+        // else if (cityToCheck === cleanestCities[3]) {
+        //     alert("It's one of the cleanest cities");
+        // }
+        // else if (cityToCheck === cleanestCities[3]) {
+        //     alert("It's one of the cleanest cities");
+        // }
+
+
+
+        /** Example - with for loop **/
+        // var cleanestCities = ["Jelly", "Santa Fe", "Great Falls", "Honolulu"];
+        // var cityToCheck = prompt("Enter city name");
+
+        // for (var i = 0; i < cleanestCities.length; i++) {
+        //     if (cityToCheck === cleanestCities[i]) {
+        //         alert("It's one of the cleanest cities");
+        //     }
+        // }
+
+        // length of cleanestCities = 5
+        // index range = 0 to 4
+
+
+        /** problem - without break **/
+        // var cityToCheck = prompt("Enter city name");
+        // var cleanestCities = ["Jelly", "Santa Fe", "Great Falls", "Honolulu"];
+
+        // for (var i = 0; i < cleanestCities.length; i++) {
+        //     if (cityToCheck === cleanestCities[i]) {
+        //         alert("It's one of the cleanest cities");
+        //     }
+        //     else {
+        //         alert("city not matched" + i);
+        //     }
+        // }
+
+
+
+        /** nested for loops **/
+        var firstNames = ["Ali", "Sami", "Bilal"];
+        var lastNames = ["Khan", "Baig"];
+
+        for (var i = 0; i < firstNames.length; i++) {
+            for (var j = 0; j < lastNames.length; j++) {
+                document.write("<br>"+firstNames[i] + " " + lastNames[j])
+            }
+        }
+
+        // document.write("<h1>abdul-majid-ashrafi</h1>");
+
+
+        // for (var i = 0; i < 4; i++) {
+        //     for (var t = 1; t <= 3; t++){
+        //         alert("child Loop " + t)
+        //     }
+        // }
+        // 4 * 3 = 12 times
+
+
+
+
+        /** when no curly braces are used, first immediate statement is considered as it's in the body of the statement **/
+        // var myArray = [2, 5, 2, 4];
+        // for (var i = 0; i < myArray.length; i++)
+        //     console.log(myArray[i]);
+        // alert("done!");
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

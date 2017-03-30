@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lecture 5 - Arrays</title>
+    <script>
+        /** Array methods **/
+
+        /*
+
+        push      = Add an element to end of an array
+        pop       = Removes last element of an array
+
+        unshift   = Add an element to start of an array
+        shift     = Removes first element of an array
+
+        splice    = Add/Remove array elements at/from any position
+        slice     = copy an array
+        indexOf   = find index or position of a specific element
+
+        */
+
+
+        // /** push **/
+
+        // var fruits = ["Mango", "Peach", "Banana"];
+        // document.write("<br><h4>push</h4>");
+        // document.write("<br>Fruits: " + fruits);
+        // fruits.push("Apple");
+        // document.write("<br>Fruits: " + fruits);
+        // fruits.push("Water Melon", "Grapes", "Melon");
+        // document.write("<br>Fruits: " + fruits);
+        // fruits.push("Grapes");
+        // document.write("<br>Fruits: " + fruits);
+        // document.write("<br>Total fruits " + fruits.length);
+
+        //     /** an alternate way to push in an array **/
+
+        //     var fruits = ["Apple", "Orange"];
+        //     document.write("<br>Fruits: " + fruits);
+        //     fruits[fruits.length] = "Mango";
+        //     fruits[fruits.length] = "Banana";
+        //     document.write("<br>Fruits: " + fruits);
+
+
+        // /** pop **/
+
+        // var fruits = ["Mango", "Peach", "Banana", "Apple", "Grapes", "Melon"];
+        // document.write("<br><h4>pop</h4>");
+        // document.write("<br>Fruits: " + fruits);
+        // fruits.pop();
+        // document.write("<br>Fruits: " + fruits);
+        // fruits.pop();
+        // fruits.pop();
+        // document.write("<br>Fruits: " + fruits);
+
+
+
+        // /** unshift **/
+
+        // var fruits = ["Mango", "Peach", "Banana"];
+        // document.write("<br><h4>unshift</h4>");
+        // document.write("<br>Fruits: " + fruits);
+        // fruits.unshift("Apple");
+        // document.write("<br>Fruits: " + fruits);
+        // fruits.unshift("Water Melon", "Grapes", "Melon");
+        // document.write("<br>Fruits: " + fruits);
+        // fruits.unshift("Grapes");
+        // document.write("<br>Fruits: " + fruits);
+        // document.write("<br>Total fruits " + fruits.length);
+
+
+        // /** shift **/
+
+        // var fruits = ["Mango", "Peach", "Banana", "Apple", "Grapes", "Melon"];
+        // document.write("<br><h4>shift</h4>");
+        // document.write("<br>Fruits: " + fruits);
+        // fruits.shift();
+        // document.write("<br>Fruits: " + fruits);
+        // fruits.shift();
+        // fruits.shift();
+        // document.write("<br>Fruits: " + fruits);
+
+
+        // console.log(fruits);
+
+
+
+
+
+
+        // /** splice **/
+
+        //     /*
+        //         fruits.splice(index, noOfElementsToRemove, elementsToAdd);
+        //     */
+
+        // var fruits = ["Mango", "Grapes", "Peach", "Banana"];
+        // document.write("<br><h4>splice</h4>");
+        // document.write("<br>Fruits: " + fruits);
+
+        // fruits.splice(2, 1);
+        // document.write("<br>Remove Fruit(s): " + fruits);
+
+        // var fruits = ["Mango", "Grapes", "Peach", "Banana"];
+        // fruits.splice(2, 0, "Apple");
+        // document.write("<br>Add Fruit(s): " + fruits);
+
+
+        // var fruits = ["Mango", "Grapes", "Peach", "Banana"];
+        // fruits.splice(2, 0, "Apple", "Orange", "Melon");
+        // document.write("<br>Add Multiple Fruits: " + fruits);
+
+        // var fruits = ["Mango", "Grapes", "Peach", "Banana"];
+        // fruits.splice(2, 1, "Apple");
+        // document.write("<br>Add & Remove Fruit(s): " + fruits);
+
+
+
+
+        // /** slice **/
+        //     /*
+        //      fruits.slice(startIndex, endIndex+1);
+        //      */
+
+        // var fruits = ["Mango", "Grapes", "Peach", "Banana", "Orange"];
+        // document.write("<br><h4>slice</h4>");
+        // document.write("<br>Fruits: " + fruits);
+
+        // var copyFruits = fruits.slice(0, 2);
+        // document.write("<br>Copy Fruit(s): " + copyFruits);
+
+
+
+
+        // /** indexOf **/
+
+        // var fruits = ["orange", "banana", "apple"];
+        // alert(fruits.indexOf("banana"));    // 1
+        // alert(fruits.indexOf("apple"));     // 2
+        // alert(fruits.indexOf("peach"));     // -1
+
+
+
+
+
+        // /** multidimensional array **/
+
+        // var multi = [ [] , [] , [] ];
+        // alert(multi.length); //3
+
+        // var multi = [ [1,2] , [3,4] , [5,6] ];
+        // alert(multi.length);    // 3
+        // alert(multi[0]);        // 1,2
+        // alert(multi[1]);        // 3,4
+        // alert(multi[2]);        // 5,6
+        // alert(multi[0].length); // 2
+
+        // alert(multi[0][0]); // 1
+        // alert(multi[0][1]); // 2
+        // alert(multi[1][0]); // 3
+        // alert(multi[1][1]); // 4
+        // alert(multi[2][0]); // 5
+        // alert(multi[2][1]); // 6
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
