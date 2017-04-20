@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        h1 {
+            font-style: italic;
+            font-weight: 600;
+            font-family: 'Titillium Web', sans-serif;
+            position: relative;
+            font-size: 36px;
+            line-height: 40px;
+            padding: 15px 15px 15px 10%;
+            color: cyan;
+            box-shadow: inset 0 0 0 1px rgba(53, 86, 129, 0.4), inset 0 0 5px rgba(53, 86, 129, 0.5), inset -285px 0 35px white;
+            border-radius: 0 10px 0 10px;
+            background: #fff url(http://www.embertech.co.uk/wp-content/uploads/2012/06/cog-sub-heading-background.png) no-repeat center left;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="heading">JavaScript HTML DOM (Document Object Model)</h1>
+    <div id="demo">Hello World</div>
+
+    <script>
+        // javascript can access and change all Elements of an HTML DOM 
+        // when a web page is loaded, browser create an DOM of the page
+
+
+        // Benefit of DOM?
+        // JavaScript can remove existing HTML elements and attributes
+        // js can change all elements
+        // js can add all elements
+        // js can add all attributes
+        // js can add all style
+
+
+
+
+        // What is the HTML DOM?
+        // The HTML elements as objects
+        // The properties of all HTML elements
+        // The methods to access all HTML elements
+        // The events for all HTML elements
+
+
+        // What is JavaScript HTML DOM Methods?
+        // A Methods is an action you can do like(add or delete html dom elemetns)
+        // A property is a value so you can set and update html dom elemetns
+
+        var loggedin = true;
+        var x = 10;
+        (loggedin) ? console.log(x + 5) : console.log(x - 5)
+
+
+
+        // var id = document.getElementById("heading").innerHTML = " Hello" 
+        var id = document.getElementById("demo").style.fontSize = "50px"
+        // console.log(id)
+    </script>
+</body>
+
+</html>
