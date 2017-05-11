@@ -1,25 +1,24 @@
 var show = document.getElementById('timer'),
+      miliseconds = 0,
       seconds = 0,
-      minutes = 0,
-      hours = 0
+      minutes = 0
 
 function add() {
-      seconds++
-      if (seconds >= 60) {
+      miliseconds++
+      if (miliseconds >= 60) {
+            miliseconds = 0
+            seconds++
+      } else if (seconds >= 60) {
             seconds = 0
             minutes++
-      } else if (minutes >= 60) {
-            minutes = 0
-            hours++
       }
 
-
-      show.innerHTML = hours + ':' + minutes + " : " + seconds
+      show.innerHTML = (minutes ? (minutes > 9 ? minutes : '0' + minutes) : "00") + ':' + (seconds ? (seconds > 9 ? seconds : '0' + seconds) : "00") + ':' + (miliseconds ? (miliseconds > 9 ? miliseconds : '0' + miliseconds) : "00")
       timerStart()
 }
 
 function timerStart() {
-      stop = setTimeout(add, 1000)
+      stop = setTimeout(add, 20)
 }
 timerStart()
 
@@ -30,7 +29,7 @@ function timerStop() {
 function clearTimer() {
       clearTimeout(stop)
       show.innerHTML = '00:00:00'
+      miliseconds = 0
       seconds = 0
-      minutes = 0
 }
 
