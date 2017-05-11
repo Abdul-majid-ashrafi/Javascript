@@ -1,19 +1,18 @@
 var display = document.getElementById('display'),
-      value1, value2, operator
+      value1, value2, oprateSign, calculateValue
 
 
-// This function work for operators
+// This function work for oprateSigns
 function operat(sign) {
-      console.log(sign)
-      operator = sign
-      display.innerHTML = sign
+      oprateSign = sign
+      display.innerHTML = oprateSign
 }
 
 //This function get number value
 function cal(num) {
       num = num.toString()
 
-      if (operator == undefined) {
+      if (oprateSign == undefined) {
             if (value1 == undefined) {
                   value1 = num
             } else {
@@ -28,11 +27,18 @@ function cal(num) {
             }
             display.innerHTML = value2
       }
-
-      console.log('value1', value1)
-      console.log('value2', value2)
-      console.log('operator', operator)
 }
 
 // This fucntion work to equal
-function equal() { }
+function equal() {
+      value1 = parseInt(value1)
+      value2 = parseInt(value2)
+      if (oprateSign == '+') {
+            calculateValue = value1 + value2
+      } else if (oprateSign == '-') {
+            calculateValue = value1 - value2
+
+      }
+      display.innerHTML = calculateValue
+
+}
