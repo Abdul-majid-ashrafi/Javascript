@@ -27,3 +27,10 @@ function timerStop() {
       clearTimeout(stop)
 }
 
+function clearTimer() {
+      clearTimeout(stop)
+      show.innerHTML = '00:00:00'
+      seconds = 0
+      minutes = 0
+}
+
