@@ -37,7 +37,6 @@ function equal() {
             calculateValue = value1 + value2
       } else if (oprateSign == '-') {
             calculateValue = value1 - value2
-
       }
       display.innerHTML = calculateValue
 
