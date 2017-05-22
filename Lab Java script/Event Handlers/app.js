@@ -13,6 +13,11 @@
 
 
 
+
+
+
+
+
 // function bigImg(x) {
 //     x.style.height = "64px";
 //     x.style.width = "64px";
@@ -22,7 +27,7 @@
 // function normalImg(x) {
 //     x.style.height = "32px";
 //     x.style.width = "32px";
-//     x.src = 'http://wojdylosocialmedia.com/wp-content/uploads/2015/04/Screen-Shot-2015-04-06-at-3.41.55-PM.png'
+//    // x.src = 'http://wojdylosocialmedia.com/wp-content/uploads/2015/04/Screen-Shot-2015-04-06-at-3.41.55-PM.png'
 // }
 
 
@@ -30,6 +35,14 @@
 
 
 
+
+
+
+
+
+
+
+// <!--Mouse Events onmousemove onmouseenter onmouseover-->
 // var x = 0;
 // var y = 0;
 // var z = 0;
@@ -50,11 +63,29 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+// onSubmit Event 
 // function getFormValues() {
 //     var emailID = document.getElementById('emailID').value;
 //     var gender = document.getElementById('gender').value;
 //     alert(emailID + " " + gender);
 // }
+
+
+
+
+
+
+
 
 
 
@@ -78,10 +109,29 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // <!--EventListener-->
 // function myFunction(){
 //     alert(98765)
 // }
 // document.getElementById("demo").addEventListener("mousemove", myFunction);
+
+
+
+
 
 
 
@@ -118,6 +168,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 // function checkInput(textbox) {
 //     var textInput = document.getElementById(textbox).value;
 //     console.log(textbox.value)
@@ -126,10 +186,31 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 // function msg() {
 //     // confirm("Are you sure to reset")
 //     alert("This alert box was triggered by the onreset event handler");
 // }
+
+
+
+
+
+
+
+
+
+
+
 
 // function myFunction() {
 //     alert(87654)
