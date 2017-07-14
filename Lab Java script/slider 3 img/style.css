@@ -1,0 +1,23 @@
+#container{
+    width: 90%;
+    height: 300px;
+    border: 1px solid black;
+    margin: 0 auto;
+    position: relative;
+}
+
+img{
+    width: 33.3%;
+    height: 100%;
+    position: absolute;
+}
+
+button{
+    position: relative;
+    top: 50%;
+    background-color: transparent;
+}
+#next{
+    display: block;
+    float: right;
+}
