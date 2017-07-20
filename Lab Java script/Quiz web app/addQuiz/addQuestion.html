@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Create Questions</title>
+</head>
+
+<body>
+
+    <label>Question: <br/>
+    <input type="text" id="question" placeholder="What want to ask">
+    </label>
+    <br/>
+
+    <label>Option 1: <br/>
+    <input type="text" id="option1" placeholder="Choices answer"></label>
+    <select name="correctOption1" id="correctOption1">
+        <option value="true">Correct</option>
+        <option value="false">Incorrect</option>
+    </select>
+    <br/>
+
+    <label>Option2: <br/>
+    <input type="text" id="option2" placeholder="Choices answer"></label>
+    <select name="correctOption2" id="correctOption2">
+        <option value="true">Correct</option>
+        <option value="false">Incorrect</option>
+    </select>
+    <br/>
+
+    <label>Marks: <br/>
+    <input type="text" id="marks" placeholder="10"></label>
+    <br/>
+    <button onClick='questionData("more")'>Add More Questions</button>
+    <button onClick='questionData("save")'>Save Quiz</button>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
