@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Objects</title>
+    <script>
+        //         var plan1 = {
+        //             name: "Basic",
+        //             price: 3.99,
+        //             space: "100 gb",
+        //             data: "1000 gb/mo",
+        //             pages: 10,
+        //             discountMonth: ["JAN", "JUN", "SEP"]
+        //         };
+        //         document.write(plan1.name);
+        //         document.write("<br>");
+        //         document.write(plan1.discountMonth);
+        //         // plan1.TotalPrice = 5.00;
+        //         document.write("<br>");
+        //         document.write(plan1.price);
+        //         document.write("<br>");
+        //         // document.write(plan1.TotalPrice);
+
+        // console.log(plan1)
+
+
+
+
+
+
+
+
+
+
+        // var plan1 = {
+        //     name: "Basic",
+        //     price: 3.99,
+        //     space: "100 gb",
+        //     data: "1000 gb/mo",
+        //     pages: 10,
+        //     discountMonth: ["JAN", "JUN", "SEP"],
+        //     isActive: true
+        // };
+
+        // plan1.discountMonth[2];
+        // //        plan1["name"];
+        // //        plan1["price"];
+        // plan1["data"];
+        // plan1["discountMonth"][2]
+
+
+
+
+
+
+
+
+
+        //     var plan1 = {
+        //         name: "Basic",
+        //         price: 3.99,
+        //         data: "1000 gb/mo",
+        //         pages: 10,
+        //         isActive: true,
+        //         discountMonth: ["JAN", "JUN", "SEP"],
+        //         abc: {
+        //             xyz: "xyz value"
+        //         }
+        //     };
+
+        //     // var propExists = "pages" in plan1;
+        //     // var propExists = "xyz" in plan1.abc;
+        //     alert(propExists);
+        //     delete plan1.pages;
+        //    console.log(plan1);
+
+
+
+
+
+
+
+
+
+        // var student2 = {
+        //     name: "Sami",
+        //     age: 21,
+        //     rollNumber: "B456",
+        //     admissionYear: 2014,
+        //     getYears: function () {
+        //         var today = new Date();
+        //         var currentYear = today.getFullYear();
+        //         return currentYear - student2.admissionYear;
+        //     }
+        // };
+        // document.write("Years : " + student2.getYears());
+
+
+
+
+
+
+
+
+
+
+
+        // var plan1 = {
+        //    name            : "Basic",
+        //    price           : 3.99,
+        //    data            : "1000 gb/mo",
+        //    pages           : 10
+        // };
+
+        // var plan2 = {
+        //    name            : "Pro",
+        //    price           : 3.99,
+        //    data            : "1000 gb/mo",
+        //    pages           : 10
+        // };
+
+        // var plan3 = {
+        //    name            : "Ultimate",
+        //    price           : 3.99,
+        //    data            : "1000 gb/mo",
+        //    pages           : 10
+        // };
+
+
+
+
+
+
+
+
+        // constructor
+        // function Plan(naam, paisay, samaan, safhat) {
+        //     this.name = naam;
+        //     this.price = paisay;
+        //     this.data = samaan;
+        //     this.pages = safhat;
+        // }
+        // //
+        // var plan1 = new Plan("Basic", 3.99, "1000 gb/mo", 10);
+        // var plan2 = new Plan("Golden", 5.99, "2000 gb/mo", 20);
+        // plan1.cuont = 123
+        // plan1.lastName = "Majid"
+        // plan2.lastName = "Haider"
+
+        // console.log(plan1)
+        // console.log(plan2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //function Plan(naam, paisay, samaan, safhat){
+        //    this.name   = naam;
+        //    this.price  = paisay;
+        //    this.data   = samaan;
+        //    this.pages  = safhat;
+        //}
+
+        //var plan1 = new Plan("Basic", 3.99, "1000 gb/mo", 10);
+        //var plan2 = new Plan("Basic", 3.99, "1000 gb/mo", 10);
+        //
+        //        if( plan1.name == plan2.name ){
+        //            alert("values are same");
+        //        }
+        //        else{
+        //            alert("Not same")
+        //        }
+
+
+
+
+
+
+
+
+
+
+
+
+        // function Plan(naam, paisay, samaan, safhat, saal){
+        //     this.name       = naam;
+        //     this.price      = paisay;
+        //     this.data       = samaan;
+        // //     this.pages      = safhat;
+        //     this.regYear    = saal;
+        //     this.getYears   = function (){
+        //         var today       = new Date();
+        //         var currentYear = today.getFullYear();
+        //         return currentYear - this.regYear;
+        //     }
+        // }
+        //
+        //    var plan1 = new Plan("Basic", 3.99, "1000 gb/mo", 10, 2000);
+        //    var plan2 = new Plan("Pro", 4.99, "2000 gb/mo", 15, 2010);
+        //
+        //        document.write(plan1.getYears());
+        //        document.write(plan2.getYears());
+
+
+
+
+
+
+
+
+
+        // // prototype
+        // function Plan(naam, paisay, samaan, safhat, saal) {
+        //     this.name = naam;
+        //     this.price = paisay;
+        //     this.data = samaan;
+        //     this.pages = safhat;
+        //     this.regYear = saal;
+        //     this.category = "Broadband";
+        // }
+        // var plan1 = new Plan("Basic", 3.99, "1000 gb/mo", 10, 2000);
+        // //   create prototype  as a variable
+        // Plan.prototype.newPackage = "something"
+        // console.log(plan1.newPackage)
+
+        // //   create prototype AS a function
+        // Plan.prototype.getYears = function (abc) {
+        //     alert(abc)
+        //     var today = new Date();
+        //     var currentYear = today.getFullYear();
+        //     return currentYear - this.regYear;
+        // }
+        // console.log(plan1.getYears("Hello"))
+
+
+
+
+
+
+
+
+
+
+        function Plan(naam, paisay, samaan, safhat, saal) {
+            this.name = naam;
+            this.price = paisay;
+            this.data = samaan;
+            this.pages = safhat;
+            this.regYear = saal;
+        }
+        // instance
+        var plan1 = new Plan("Basic", 3.99, "1000 gb/mo", 10, 2000);
+
+        for (var key in plan1) {
+            var element = plan1[key];
+            console.log(key,element)
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function Plan(naam, paisay, samaan, safhat, saal){
+//     this.name       = naam;
+//     this.price      = paisay;
+//     this.data       = samaan;
+//     this.pages      = safhat;
+//     this.regYear    = saal;
+// }
+
+// Plan.prototype.getYears   = function (){
+//     var today       = new Date();
+//     var currentYear = today.getFullYear();
+//     return currentYear - this.regYear;
+// }
+
+// var plan1 = new Plan("Basic", 3.99, "1000 gb/mo", 10, 2000);
+
+//         var exists = "getYears" in plan1;
+//         alert(exists);
+
+//         var exists = plan1.hasOwnProperty("getYears");
+//         alert(exists);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script>
+
+        function openWindow(){
+            var mywindow = window.open("DemControls2.html", "win1", "width=480,height=380,left=200,top=100");
+            if(mywindow == null){
+                document.write("Popup not allowed");
+            }
+            else {
+                document.write("Popup allowed");
+            }
+
+        }
+
+    </script>
+
+</head>
+<body>
+    Page5 <br>
+    <input type="Button" onclick="openWindow()" value="Open New Window">
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script>
+        var mywindow = null;
+        function openWindow(){
+            alert("Test");
+            mywindow = window.open("DemControls4.html", "win1", "width=480,height=380,left=200,top=100");
+
+        }
+        function closeWindow(){
+            mywindow.close();
+        }
+
+    </script>
+
+</head>
+<body>
+    Page6 <br>
+    <input type="Button" onclick="openWindow()" value="Open New Window">
+    <input type="Button" onclick="closeWindow()" value="Close New Window">
+
+</body>
+</html>

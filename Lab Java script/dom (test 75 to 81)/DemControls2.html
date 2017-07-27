@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script>
+
+       // alert(document.referrer);
+        function changePage(){
+            //alert("Test");
+            window.location.assign("DemControls3.html");
+        }
+
+        function goBack(){
+            history.back();
+            // history.go(-2);
+        }
+        function goForward(){
+            history.forward();
+        }
+
+    </script>
+</head>
+<body>
+
+Controls 2
+
+
+<input type="Button" onclick="changePage()" value="Go to DemoControl3">
+
+<input type="Button" value="Back" onclick="goBack()">
+<input type="Button" value="forward" onclick="goForward()">
+
+
+
+</body>
+</html>
