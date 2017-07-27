@@ -8,13 +8,13 @@
 
 
 
-// function myFucntion() {
-//     var getInput = document.getElementById('inputField').value
-//     var newTag = document.createElement('LI')
-//     var tagText = document.createTextNode(getInput)
-//     newTag.appendChild(tagText)
-//     document.getElementById('list').appendChild(newTag)
-// }
+function myFucntion() {
+    var getInput = document.getElementById('inputField').value
+    var newTag = document.createElement('LI')
+    var tagText = document.createTextNode(getInput)
+    newTag.appendChild(tagText)
+    document.getElementById('list').appendChild(newTag)
+}
 
 
 
@@ -32,25 +32,25 @@
 
 
 
-// function myFunction() {
-//     var myName = document.getElementById('userName').value;
-//     var myEmail = document.getElementById('email').value;
-//     var parentTable = document.getElementById('renderTable');
+function myFunction() {
+    var myName = document.getElementById('userName').value;
+    var myEmail = document.getElementById('email').value;
+    var parentTable = document.getElementById('renderTable');
 
-//     var newRow = document.createElement('tr');
-//     var nameElement = document.createElement('td');
-//     var emailElement = document.createElement('td');
+    var newRow = document.createElement('tr');
+    var nameElement = document.createElement('td');
+    var emailElement = document.createElement('td');
 
-//     var nameText = document.createTextNode(myName);
-//     var emailText = document.createTextNode(myEmail);
+    var nameText = document.createTextNode(myName);
+    var emailText = document.createTextNode(myEmail);
 
-//     nameElement.appendChild(nameText);
-//     emailElement.appendChild(emailText);
+    nameElement.appendChild(nameText);
+    emailElement.appendChild(emailText);
 
-//     newRow.appendChild(nameElement);
-//     newRow.appendChild(emailElement);
-//     parentTable.appendChild(newRow);
-// }
+    newRow.appendChild(nameElement);
+    newRow.appendChild(emailElement);
+    parentTable.appendChild(newRow);
+}
 
 
 
