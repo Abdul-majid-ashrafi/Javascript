@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+</head>
+
+<body>
+    <div>
+        Form 4 Radio Button
+    </div>
+
+
+    <form onsubmit="return validateFields()" action="DemoForms3Submit.html">
+        <label>Name:</label> <input id="name" type="text"><br>
+
+        <input type="radio" name="r1" value="cat"> Cat<br>
+        <input type="radio" name="r1" value="bat"> Bat<br>
+        <input type="radio" name="r1" value="hat"> Hat<br>
+
+        <input id="btn" type="submit" value="Submit">
+    </form>
+
+    <script>
+        function validateFields() {
+            var radios = document.getElementsByName("r1");
+
+            for (var i = 0; i < radios.length; i++) {
+                if (radios[i].checked) {
+                    return true;
+                }
+            }
+            alert("Please Select one");
+            return false;
+
+        }
+
+        function doSomeWork() {
+            var a = null;
+            alert(typeof a);
+            if (a) {
+                alert("test1");
+            }
+            else {
+                alert("test2");
+            }
+        }
+        doSomeWork();
+
+    </script>
+</body>
+
+</html>

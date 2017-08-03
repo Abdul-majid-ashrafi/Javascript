@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<form  action="DemoForms3Submit.html">
+    <label>Name:</label> <input id="name" type="text" ><br>
+    <input id="btn" type="button" value="Submit" onclick="validateFields()" >
+</form>
+
+
+
+<script>
+    function validateFields(){
+        try {
+            var val = validateText();
+            return val;
+        }
+        catch(err){
+            alert("Error : "+err);
+        }
+    }
+
+    function validateText(){
+        var name = document.getElementById("name");
+        if(name.value.length === 0){
+            throw "Name field empty";
+
+        }
+        else {
+            return true;
+        }
+
+    }
+
+</script>
+</body>
+</html>

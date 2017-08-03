@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<input type="button" id="btn" value="Click Here">
+
+<script>
+
+    var btn = document.getElementById("btn");
+    btn.onclick = function (){
+        alert(btn.value);
+    };
+    btn.onmouseover = mouseOver;
+    btn.onmouseout = mouseOut;
+
+    function mouseOver(){
+        btn.style.background="blue";
+        //alert(btn.value);
+    }
+    function mouseOut(){
+        btn.style.background="yellow";
+
+    }
+
+
+</script>
+</body>
+</html>

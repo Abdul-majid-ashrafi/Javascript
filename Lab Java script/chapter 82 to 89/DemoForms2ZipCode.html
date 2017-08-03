@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+</head>
+<body>
+<div>
+    Form 4 Radio Button
+</div>
+
+
+<form onsubmit="return validateFields()" action="DemoForms3Submit.html">
+    <label>ZipCode:</label> <input id="zipcode" type="text" ><br>
+
+
+    <input id="btn" type="submit" value="Submit" >
+</form>
+
+<script>
+
+    function validateFields(){
+        var zipcode = document.getElementById("zipcode");
+        if(zipcode.value.length<5){
+            alert("Please enter a 5-digit code.");
+            return false;
+        }
+        for(var i=0;i<zipcode.value.length;i++){
+            var charNum = parseInt(zipcode.value[i]);
+            if(isNaN(charNum)){
+                alert("Please enter number only.");
+                return false;
+            }
+        }
+
+
+    }
+
+</script>
+</body>
+</html>

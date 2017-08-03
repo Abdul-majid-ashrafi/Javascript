@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+</head>
+<body>
+<div>
+    Form 4 Validate
+</div>
+
+
+<form onsubmit="return validateFields()" action="DemoForms3Submit.html">
+    <label>Name:</label> <input id="name" type="text" ><br>
+    <label>Age:</label> <input id="age" type="text" ><br>
+    <label>States:</label>
+    <select id="states">
+        <option value="" selected="selected">
+            SELECT A STATE</option>
+        <option value="AL">Alabama</option>
+        <option value="AK">Alaska</option>
+        <option value="AZ">Arizona</option>
+        <option value="AR">Arkansas</option>
+    </select>
+    <br>
+
+    <input id="btn" type="submit" value="Submit" >
+</form>
+
+<script>
+
+    function validateFields(){
+        if(validateTextField("name")){
+            alert("Please enter correct value for name");
+            return false;
+        }
+        else if(validateDropdownBox("states")) {
+            alert("Please select one state");
+            return false;
+        }
+        else if(validateNumber("age")){
+            alert("Please entry number only");
+            return false;
+        }
+    }
+
+    function validateTextField(id){
+        var textField = document.getElementById(id);
+        return textField.value.length === 0;
+    }
+    function validateDropdownBox(id){
+        var selectBox= document.getElementById(id);
+        return selectBox.selectedIndex === 0;
+    }
+    function validateNumber(id){
+        var numberField= document.getElementById(id);
+        var val = numberField.value;
+        var charNum = parseInt(val);
+        if(val.length ==0 || isNaN(charNum)){
+            return true;
+        }
+        else {
+            return false;
+        }
+
+
+    }
+
+
+
+</script>
+</body>
+</html>

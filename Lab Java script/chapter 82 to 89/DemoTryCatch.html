@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+
+    <input type="text" id="demo">
+    <button onclick="greetWorld()">done</button>
+    <script>
+        function greetWorld() {
+            var demo = document.getElementById('demo')
+            demo = demo.value
+            try {
+                if (demo == "") throw "Empty "
+                if (demo == 123) throw "num not allow "
+            }
+            catch (err) {
+                alert("Error " + err);
+            }
+        }
+        // document.write("hello world after function");
+    </script>
+</body>
+
+</html>

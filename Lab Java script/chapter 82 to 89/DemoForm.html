@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+</head>
+
+<body>
+
+    <form>
+        <input id="txt" type="text">
+        <input id="btn" onclick="writetxt()" type="button" value="submit">
+    </form>
+
+    <script>
+        var txt = document.getElementById("txt");
+
+        //var btn = document.getElementById("btn");
+        function writetxt() {
+            var val = txt.value;
+            if (val.length === 0) {
+                alert("plz enter correct value....");
+            }
+            else { document.write(val); }
+
+        }
+
+    </script>
+</body>
+
+</html>
