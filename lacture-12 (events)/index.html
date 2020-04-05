@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Events</title>
+    <script>
+        function greetUser(msg) {
+            alert(msg);
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- <a href="#" onClick="alert('Hi!');">Click Me</a> -->
+
+    <!--<p ONCLICK="alert('Paragraph clicked!');">ABC XYZ ABC XYZ ABC XYZ ABC XYZ ABC XYZ ABC XYZ </p>-->
+
+
+    <!-- <a href="#" onClick="var message = 'Hello World!';alert(message);">Click Me</a> -->
+    <!-- <br> -->
+    <!-- <p>Hello</p> -->
+    <!-- <br> -->
+    <!-- <a href="Javascript:void(0)" onClick="alert('Hello World!');">Click Me</a> -->
+
+
+
+    <!-- <a href="Javascript:void(0)" onClick="var message = 'Hello'; greetUser(message);">Click Me</a> -->
+
+
+
+    <!-- <input type="button" value="Submit" onclick="greetUser('Welcome!')"> -->
+
+
+
+    <!-- <img src="apple-iphone6s.jpg" onclick="alert('Hello');"> -->
+
+
+
+    <!-- <img src="before-apple-iphone.jpg" onMouseover=" src='after-apple-iphone.jpg' "
+    onMouseout=" src='before-apple-iphone.jpg' "> -->
+
+
+
+    <!-- <h1 onMouseover="alert('Be sure to get your shopping done today.');">World Ends Tomorrow</h1> -->
+
+
+    <!-- <a href="index.html" onMouseover="this.style.color='green';"
+    onMouseout="this.style.color = 'blue'">Home Page</a> -->
+
+
+
+    <!-- <label>Email:</label>
+    <input type="text" size="30" onFocus="this.style.backgroundColor = 'lightblue';"
+        onblur="this.style.backgroundColor = 'white'">
+    <br>
+    <label>Password:</label>
+    <input type="password" size="30">
+    <input type="button" value="Submit"> -->
+
+
+    <!-- <form onsubmit="getFormValues()">
+        Email:
+        <input type="text" id="emailID">
+        <br>
+        Gender:
+        <select id="gender">
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function getFormValues() {
+            var emailID = document.getElementById('emailID').value;
+            var gender = document.getElementById('gender').value;
+            alert(emailID + " " + gender);
+        }
+    </script> -->
+
+
+
+
+
+    <!-- <form onSubmit="checkAddress('email');">
+        Email:
+        <input type="text" id="email">
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function checkAddress(fieldId) {
+            if (document.getElementById(fieldId).value === "") {
+                alert("Email address required.");
+            }
+        }
+    </script> -->
+
+
+
+
+    <!-- <form>
+        ZIP:<br>
+        <input type="text" id="zip" onBlur="fillCity();"><br>
+        City:<br>
+        <input type="text" id="city">
+    </form>
+
+    <script>
+        function fillCity() {
+            var zip = document.getElementById('zip').value;
+            var city;
+            switch (zip) {
+                case '75210':
+                    city = 'Karachi';
+                    break;
+                case '12345':
+                    city = 'Lahore';
+                    break;
+                case '67892':
+                    city = 'Peshawar';
+                    break;
+                default:
+                    city = 'Islamabad';
+            }
+            document.getElementById('city').value = city;
+        }
+    </script> -->
+
+
+
+    <!-- <p id="slowLoris">
+        Slow lorises are a group of several species of strepsirrhine
+        primates which make up the genus Nycticebus.
+        <a href="javascript:void(0);" onClick="expandLoris();"><em>Click for more.</em></a>
+    </p>
+
+    <script>
+        function expandLoris() {
+            var expandedParagraph = "Slow lorises are a group of several " +
+                "species of trepsirrhine primates which make up the genus " +
+                "Nycticebus. They have a round head, narrow snout, large eyes, " +
+                "and a variety of distinctive coloration patterns that are species-dependent. " +
+                "The hands and feet of slow lorises have several adaptations that give them " +
+                "a pincer-like grip and enable them to grasp branches for long periods of time." +
+                " Slow lorises have a toxic bite, a rare trait among mammals.";
+
+            document.getElementById("slowLoris").innerHTML = expandedParagraph;
+        }
+
+    </script> -->
+
+</body>
+
+</html>
